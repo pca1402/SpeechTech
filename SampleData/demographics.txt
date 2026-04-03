@@ -1,0 +1,148 @@
+czech5:
+Biographical Data
+
+    birth place: klando, czech republic (map)
+    native language: czech (ces)
+    other language(s): german slovak polish croatian
+    age, sex: 26, female
+    age of english onset: 16
+    english learning method: academic
+    english residence: uk, usa
+    length of english residence: 0.8 years
+
+danish7:
+Biographical Data
+
+    birth place: copenhagen, denmark (map)
+    native language: danish (dan)
+    other language(s): hebrew german
+    age, sex: 22, male
+    age of english onset: 8
+    english learning method: naturalistic
+    english residence:
+    length of english residence: 0 years
+
+
+dutch1:
+Biographical Data
+
+    birth place: nijmegen, netherlands (map)
+    native language: dutch (nld)
+    other language(s): german
+    age, sex: 38, male
+    age of english onset: 13
+    english learning method: academic
+    english residence: uk
+    length of english residence: 0.1 years
+    
+
+english58: 
+Biographical Data
+
+    birth place: southhampton, uk (map)
+    native language: english (eng)
+    other language(s): none
+    age, sex: 46, female
+    age of english onset: 0
+    english learning method: naturalistic
+    english residence: uk,usa
+    length of english residence: 16 years
+
+finnish4:
+Biographical Data
+
+    birth place: helsinki, finland (map)
+    native language: finnish (fin)
+    other language(s): swedish german italian
+    age, sex: 30, female
+    age of english onset: 9
+    english learning method: academic
+    english residence: uk, usa
+    length of english residence: 3 years
+    
+frisian1:
+Biographical Data
+
+    birth place: akkrum, friesland, netherlands (map)
+    native language: frisian (fri)
+    other language(s): dutch german french
+    age, sex: 62, male
+    age of english onset: 13
+    english learning method: academic
+    english residence: usa,canada
+    length of english residence: 27 years
+
+hindi9:
+Biographical Data
+
+    birth place: durgapur, west bengal, india (map)
+    native language: hindi (hin)
+    other language(s): bengali
+    age, sex: 31, male
+    age of english onset: 4
+    english learning method: academic
+    english residence: usa
+    length of english residence: 8 years
+
+kiswahili10:
+Biographical Data
+
+    birth place: hola, kenya (map)
+    native language: kiswahili (swh)
+    other language(s): arabic oromo
+    age, sex: 27, female
+    age of english onset: 8
+    english learning method: academic
+    english residence: usa
+    length of english residence: 1 years
+
+mongolian4:
+Biographical Data
+
+    birth place: ulaanbaatar, mongolia (map)
+    native language: mongolian (khk)
+    other language(s): chinese russian
+    age, sex: 19, male
+    age of english onset: 15
+    english learning method: academic
+    english residence: usa
+    length of english residence: 1 years
+
+tatar1:
+Biographical Data
+
+    birth place: kargali, tatarstan, russia (map)
+    native language: tatar (tat)
+    other language(s): russian french
+    age, sex: 29, female
+    age of english onset: 10
+    english learning method: academic
+    english residence: usa
+    length of english residence: 8 years
+    
+ukrainian6:
+Biographical Data
+
+    birth place: priluki, ukraine (map)
+    native language: ukrainian (ukr)
+    other language(s): russian french
+    age, sex: 22, female
+    age of english onset: 11
+    english learning method: academic
+    english residence: usa
+    length of english residence: 3 years
+
+
+wolof6:
+Biographical Data
+
+    birth place: dakar, senegal (map)
+    native language: wolof (wof)
+    other language(s): french
+    age, sex: 25, male
+    age of english onset: 13
+    english learning method: academic
+    english residence: usa
+    length of english residence: 12 years
+    
+

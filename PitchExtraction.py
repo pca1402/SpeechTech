@@ -39,7 +39,18 @@ def gender_classify(frequency):
     gender = "Masculine"
   return gender
 
-folder_path = r'C:\Users\paula\Speech_Tech_Project\SampleData' # Use 'r' prefix for raw string to handle backslashes
+folder_path = r'C:\Users\paula\SpeechTech\SampleData\AudioSamples\GivenSamples' # Use 'r' prefix for raw string to handle backslashes
+# Iterate through all entries in the directory
+for filename in os.listdir(folder_path):
+    # Construct the full path
+    full_path = os.path.join(folder_path, filename)
+    # Check if the current entry is a file
+    if os.path.isfile(full_path):
+      mean_freq = extract_pitch(full_path, 85, 255)
+      gender = gender_classify(mean_freq)
+      print(f"Result {filename}: {mean_freq}Hz = {gender}")
+
+folder_path = r'C:\Users\paula\SpeechTech\SampleData\AudioSamples\CollectedSamples' # Use 'r' prefix for raw string to handle backslashes
 # Iterate through all entries in the directory
 for filename in os.listdir(folder_path):
     # Construct the full path

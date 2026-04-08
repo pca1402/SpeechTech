@@ -2,6 +2,7 @@ import numpy as np
 import parselmouth
 from scipy.io import wavfile
 import os
+from pathlib import Path
 
 def extract_pitch(audio_file, fmin, fmax):
   """
@@ -39,18 +40,18 @@ def gender_classify(frequency):
     gender = "Masculine"
   return gender
 
-folder_path = r'C:\Users\paula\SpeechTech\SampleData\AudioSamples\GivenSamples' # Use 'r' prefix for raw string to handle backslashes
-# Iterate through all entries in the directory
-for filename in os.listdir(folder_path):
-    # Construct the full path
-    full_path = os.path.join(folder_path, filename)
-    # Check if the current entry is a file
-    if os.path.isfile(full_path):
-      mean_freq = extract_pitch(full_path, 85, 255)
-      gender = gender_classify(mean_freq)
-      print(f"Result {filename}: {mean_freq}Hz = {gender}")
+# Get the directory where THIS script is saved
+# .resolve() ensures handling of symlinks or weird OS paths
+BASE_DIR = Path(__file__).resolve().parent
 
-folder_path = r'C:\Users\paula\SpeechTech\SampleData\AudioSamples\CollectedSamples' # Use 'r' prefix for raw string to handle backslashes
+# Define data folder relative to that base
+# Even if someone else clones this Git repo/script, it will still work without needing to change any paths, as long as the folder structure is maintained
+data_folder = BASE_DIR / "SampleData"
+
+# Accessing a specific file
+file_path = data_folder / "audio_01.wav"
+
+folder_path = data_folder / "AudioSamples" / "GivenSamples"
 # Iterate through all entries in the directory
 for filename in os.listdir(folder_path):
     # Construct the full path
@@ -59,4 +60,15 @@ for filename in os.listdir(folder_path):
     if os.path.isfile(full_path):
       mean_freq = extract_pitch(full_path, 85, 255)
       gender = gender_classify(mean_freq)
-      print(f"Result {filename}: {mean_freq}Hz = {gender}")
+      print(f"Result given_{filename}: {mean_freq}Hz = {gender}")
+
+folder_path = data_folder / "AudioSamples" / "CollectedSamples"
+# Iterate through all entries in the directory
+for filename in os.listdir(folder_path):
+    # Construct the full path
+    full_path = os.path.join(folder_path, filename)
+    # Check if the current entry is a file
+    if os.path.isfile(full_path):
+      mean_freq = extract_pitch(full_path, 85, 255)
+      gender = gender_classify(mean_freq)
+      print(f"Result collected_{filename}: {mean_freq}Hz = {gender}")

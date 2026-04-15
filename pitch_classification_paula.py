@@ -32,10 +32,10 @@ def extract_pitch(audio_file, fmin, fmax):
 def gender_classify(frequency):
   """
   This function classifies extracted audio files based on their mean_f0,
-  categorizing them as Masculine/Femenine depending on said value.
+  categorizing them as Masculine/Feminine depending on said value.
   """
   if (frequency > 160):
-    gender = "Femenine"
+    gender = "Feminine"
   else:
     gender = "Masculine"
   return gender
